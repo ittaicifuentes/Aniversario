@@ -15,46 +15,46 @@
     }
 
     .heart {
-  position: relative;
-  width: 100px;
-  height: 90px;
-  margin: 40px auto;
-  transform: rotate(-45deg);
-  background-color: #ff2d55;
-  animation: pulse 1s infinite;
-}
+  		position: relative;
+  		width: 100px;
+ 		height: 90px;
+  		margin: 40px auto;
+  		transform: rotate(-45deg);
+  		background-color: #ff2d55;
+  		animation: pulse 1s infinite;
+	}
 
-.heart::before,
-.heart::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 90px;
-  background-color: #ff2d55;
-  border-radius: 50%;
-}
+	.heart::before,
+	.heart::after {
+  		content: "";
+  		position: absolute;
+  		width: 100px;
+  		height: 90px;
+  		background-color: #ff2d55;
+  		border-radius: 50%;
+	}
 
-.heart::before {
-  top: -50px;
-  left: 0;
-}
+	.heart::before {
+ 		top: -50px;
+  		left: 0;
+	}
 
-.heart::after {
-  left: 50px;
-  top: 0;
-}
+	.heart::after {
+  		left: 50px;
+  		top: 0;
+	}
 
-@keyframes pulse {
-  0% {
-    transform: rotate(-45deg) scale(1);
-  }
-  50% {
-    transform: rotate(-45deg) scale(1.1);
-  }
-  100% {
-    transform: rotate(-45deg) scale(1);
-  }
-}
+	@keyframes pulse {
+  		0% {
+    		transform: rotate(-45deg) scale(1);
+  		}
+  		50% {
+    		transform: rotate(-45deg) scale(1.1);
+  		}
+  		100% {
+    		transform: rotate(-45deg) scale(1);
+  		}
+	}
 
     .message {
 		font-size: 22px;
@@ -285,3 +285,4 @@
   }, 10000); // 10 segundos (ajusta si el texto es más corto o largo)
 </script>
 </html>
+
